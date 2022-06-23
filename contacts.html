@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css" media="screen">
+  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab1c349fe46fa232c90d84ccc627bba93ab678b6a9b5caec3505b3d02fdf5125b&amp;width=960&amp;height=660&amp;lang=ru_RU&amp;scroll=true&amp;id=yaMap"></script>
+  <title>Контакты</title>
+</head>
+<body>
+  <header class="site-header not-abs">
+    <div class="border">
+      <div>
+        <a href="/index.html"><img src="/images/logo.png" alt=""></a>
+        <a href="/catalog.html">Каталог</a>
+        <a href="/contacts.html">Контакты</a>
+      </div>
+      <div>
+        <a href="">Поиск</a>
+        <a href="">Корзина </a>
+        <a href=""><img src="/images/shop.png" alt=""></a>
+      </div>
+    </div>
+  </header>
+  
+  <section class="main-contacts">
+    <div>
+      <div id="yaMap"></div>
+      <div class="right-block">
+        <div>
+          <div><span>Пункы самовывоза:</span></div>
+          <div><span>Москва<br>Ул. Большая Филевская, д. 32<br>Ул. Большая Татарская, д. 36</span></div>
+          <div><span>Санкт-Петербург<br>Переулок Пирогова, д. 17<br>Ул. Константина Заслонова, д..1<br><br></span></div>
+          <div><span>Отправка в остальные города:<br>Любыми транспортными компаниями<br><br>Уточняйте по телефону</span></div>
+        </div>
+        <div class="right-contacts">
+          <div><span>Форма обратной связи<br>при возникших вопросах<br></span></div>
+          <form action="send_info.php" method="post">
+            <input type="text" name="name" placeholder="Имя">
+            <input type="text" name="message" placeholder="Сообщение">
+            <input type="phone" name="phone" placeholder="Номер телефона">
+            <button type="submit">Жду звонка</button>
+          </form>
+          <form action="send_sub.php" method="post">
+            <span>Подпишись и получи скидку 10%</span>
+            <input type="text" name="name" placeholder="Имя">
+            <input type="email" name="email" placeholder="Email">
+            <button type="submit_email">Подписаться</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="border">
+      <div class="f1">
+        <img src="./images/logo.png" alt="">
+      </div>
+      <div class="f2">
+        <span class="fs12">© Goodkettle, Inc. 2022</span>
+      </div>
+      <div class="f3">
+        <span>Телефон горячей линии<br>+7 (000) 500-**-58</span>
+      </div>
+      <div class="f4">
+        <span>Электронная почта<br>goodkettle@info.com</span>
+      </div>
+      <div class="f5">
+        <span>Получите скидку 10% на первый заказ.<br>Подпишитесь на уведомления о новых<br>поставках и предложениях на странице контактов<br><a href="/contacts.html">Подписаться</a></span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
